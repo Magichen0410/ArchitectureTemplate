@@ -168,6 +168,7 @@ public class ActivityMviDelegateImpl<V extends MvpView, P extends MviPresenter<V
           "Presenter returned from createPresenter() is null. Activity is " + activity);
     }
     if (keepPresenterInstance) {
+      // TODO: 2017/5/18 sherchen here we can generate other stable id instead of uuid
       mosbyViewId = UUID.randomUUID().toString();
       PresenterManager.putPresenter(activity, mosbyViewId, presenter);
     }

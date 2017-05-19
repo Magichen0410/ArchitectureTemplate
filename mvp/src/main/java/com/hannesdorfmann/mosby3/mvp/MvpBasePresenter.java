@@ -16,6 +16,7 @@
 
 package com.hannesdorfmann.mosby3.mvp;
 
+import android.app.Activity;
 import android.support.annotation.Nullable;
 import android.support.annotation.UiThread;
 
@@ -69,6 +70,15 @@ import java.lang.ref.WeakReference;
  * @since 1.0.0
  */
 public class MvpBasePresenter<V extends MvpView> implements MvpPresenter<V> {
+
+  protected Activity m_Activity;
+
+  public MvpBasePresenter(Activity activity){
+    m_Activity = activity;
+  }
+
+  public MvpBasePresenter() {
+  }
 
   private WeakReference<V> viewRef;
 

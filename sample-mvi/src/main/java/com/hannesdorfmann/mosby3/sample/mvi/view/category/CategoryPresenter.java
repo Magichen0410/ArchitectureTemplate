@@ -37,11 +37,13 @@ public class CategoryPresenter extends MviBasePresenter<CategoryView, CategoryVi
 
   @Override protected void bindIntents() {
     Observable<CategoryViewState> categoryViewStateObservable =
+            //Java 8 特性 ::
         intent(CategoryView::loadIntents)
             .flatMap(categoryName -> backendApi.getAllProductsOfCategory(categoryName)
                 .subscribeOn(Schedulers.io())
                 .map(CategoryViewState.DataState::new)
                 .cast(CategoryViewState.class)
+                    //在emit之前要做的事。
                 .startWith(new CategoryViewState.LoadingState())
                 .onErrorReturn(CategoryViewState.ErrorState::new))
             .observeOn(AndroidSchedulers.mainThread());
