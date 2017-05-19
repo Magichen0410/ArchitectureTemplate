@@ -1,0 +1,3 @@
+[submodule "sample-Robobing-MVVM"]
+	path = sample-Robobing-MVVM
+	url = https://github.com/RoboBinding/AndroidMVVM.git
