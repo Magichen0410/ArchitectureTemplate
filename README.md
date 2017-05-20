@@ -1,92 +1,23 @@
-# Mosby
-A Model-View-Presenter library for modern Android apps.
+#Mvp
+There are lots of things that you can find on website, its architecture diagram is below:
 
-Check the [project website](http://hannesdorfmann.com/mosby/) for more information.
-
-[![Build Status](https://travis-ci.org/sockeqwe/mosby.svg?branch=master)](https://travis-ci.org/sockeqwe/mosby)
-
-# Dependency
-
-```groovy
-dependencies {
-
-  compile 'com.hannesdorfmann.mosby3:mvi:3.0.4' // Model-View-Intent
-  // or
-  compile 'com.hannesdorfmann.mosby3:mvp:3.0.4' // Plain MVP
-  // or
-  compile 'com.hannesdorfmann.mosby3:viewstate:3.0.4' // MVP + ViewState support
-}
-```
-
-Additional modules:
-
-```groovy
-dependencies {
-
-  // MVP + ViewState + LCE Views
-  compile 'com.hannesdorfmann.mosby3:mvp-lce:3.0.4'
-
-  // Null Object Presenter for MVP
-  compile 'com.hannesdorfmann.mosby3:mvp-nullobject-presenter:3.0.4'
-}
-```
-
-SNAPSHOT:
-```groovy
-dependencies {
-
-  compile 'com.hannesdorfmann.mosby3:mvi:3.0.5-SNAPSHOT'
-
-  compile 'com.hannesdorfmann.mosby3:mvp:3.0.5-SNAPSHOT'
-  compile 'com.hannesdorfmann.mosby3:viewstate:3.0.5-SNAPSHOT'
-
-  compile 'com.hannesdorfmann.mosby3:mvp-lce:3.0.5-SNAPSHOT'
-  compile 'com.hannesdorfmann.mosby3:mvp-nullobject-presenter:3.0.5-SNAPSHOT'
-}
-```
+![image](http://note.youdao.com/favicon.ico)
 
 
-You also have to add the url to the snapshot repository:
+#Mvi
+You can read the [mvi about js](https://cycle.js.org/model-view-intent.html).
 
-```gradle
-allprojects {
-  repositories {
-    ...
+You can read the [mvi about android](https://cycle.js.org/model-view-intent.html)
 
-    maven { url "https://oss.sonatype.org/content/repositories/snapshots/" }
-}
-```
+its architecture diagram is below:
 
-# Documentation
-See the [project website](http://hannesdorfmann.com/mosby/)
+![image](http://note.youdao.com/favicon.ico)
 
-# Changelog
-The changelog can be found in the [release section](https://github.com/sockeqwe/mosby/releases)
 
-# Migrating
-In Mosby 3.0 we have changed the package name from `com.hannesdorfmann.mosby` to `com.hannesdorfmann.mosby3` (note the **3** at the end).
-Migrating a Mosby 2.x based app to Mosby 3.0  should be straight forward:
-Just replace all import statements of your app in android studio with `Edit -> Find -> Replace in Path ...`
-and set find `import com.hannesdorfmann.mosby` replace with `import com.hannesdorfmann.mosby3`.
-There were also some minor API changes (see [change log](https://github.com/sockeqwe/mosby/releases)),
-but most apps should be fine by replacing the import statements.
+#Description about the projects
 
-# Conductor
-Mosby has a plugin for [Conductor](https://github.com/bluelinelabs/Conductor). You can find it here: https://github.com/sockeqwe/mosby-conductor
+![image](http://note.youdao.com/favicon.ico)
 
-# License
-```
-Copyright 2015 Hannes Dorfmann
+#Others
 
-Licensed under the Apache License, Version 2.0 (the "License");
-you may not use this file except in compliance with the License.
-You may obtain a copy of the License at
-
-   http://www.apache.org/licenses/LICENSE-2.0
-
-Unless required by applicable law or agreed to in writing, software
-distributed under the License is distributed on an "AS IS" BASIS,
-WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
-See the License for the specific language governing permissions and
-limitations under the License.
-```
+[android-architecture](https://github.com/googlesamples/android-architecture)
