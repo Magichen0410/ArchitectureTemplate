@@ -1,5 +1,5 @@
 apply plugin: 'java'
-apply from: '../maven-push-java-lib.gradle'
+//apply from: '../maven-push-java-lib.gradle'
 apply plugin: 'findbugs'
 
 sourceCompatibility = rootProject.ext.javaSourceCompatibility
